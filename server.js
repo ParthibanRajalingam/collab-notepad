@@ -8,7 +8,7 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server);
 
-const redis = new Redis("redis-cli --tls -u redis://default:ARcsAAIjcDFkNzk4YzQ3MTc0YTM0N2Q2OGJiMDU3YTRhY2FmMjg1NnAxMA@touching-impala-5932.upstash.io:6379"); // Defaults to localhost:6379
+const redis = new Redis("redis://default:ARcsAAIjcDFkNzk4YzQ3MTc0YTM0N2Q2OGJiMDU3YTRhY2FmMjg1NnAxMA@touching-impala-5932.upstash.io:6379"); // Defaults to localhost:6379
 
 app.use(express.static("public"));
 
